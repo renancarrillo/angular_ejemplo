@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejemplo-ng';
+  title = 'Formulario';
+
+  Nombre = "Renan";
+
+  calificaciones = [10,9,8,8,7,6,8];
+
 }
