@@ -9,15 +9,13 @@
   <!-- <h3>{{ Nombre }}</h3> -->
 </div>
 
-<ul>
+<button (click)="verCal()">{{ mostrar_calificaciones ? 'Ocultar Calificaciones' : 'Ver Calificaciones' }}</button>
+<ul *ngIf="mostrar_calificaciones">
   <h2>Calificaciones hola</h2>
   <li *ngFor="let calificacion of calificaciones">
     {{ calificacion }}
   </li>
 </ul>
 
-
-
-<h2>Here are some links to help you start: </h2>
 
 <router-outlet></router-outlet>
