@@ -17,5 +17,21 @@
   </li>
 </ul>
 
+<form (submit)="agregar(cali)">
+	<label>
+		Agregar Calificacion
+		<input type="text" name="nombre" #cali>
+	</label>
+</form>
+
+<ul>
+  <h2>Animales</h2>
+  <li *ngFor="let animal of animales">
+    El {{ animal.nombre }} de raza {{ animal.raza }}come {{ animal.comida }}
+    <img class="img_animal" src="{{ animal.img }}">
+  </li>
+
+</ul>
+
 
 <router-outlet></router-outlet>
